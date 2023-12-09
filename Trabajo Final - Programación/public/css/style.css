@@ -1,0 +1,204 @@
+/*font-family: 'Work Sans', sans-serif;
+font-family: 'Bebas Neue', sans-serif;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+img {
+    border-radius: 10px;
+}
+
+/* estilos de navbar */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    background-color: #ffffff;
+    position: sticky;
+    top: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.navbar a {
+    color: rgb(0, 0, 0);
+    padding: 15px 20px;
+    text-decoration: none;
+}
+
+.opciones:hover {
+    background-color: #1FDBD2;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        position: unset;
+    }
+    .navbar a {
+        text-align: center;
+    }
+}
+
+/* estilos de header */
+
+header {
+    padding: 200px;
+    text-align: center;
+    background-image: url(../img/header\ handball.jpg);
+    background-repeat: no-repeat;
+    background-size:1750px 800px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+header div {
+    color: white;
+    font-size: 1.3rem;
+}
+
+@media (max-width: 800px) {
+    header {
+        background-position: center;
+
+    }
+}
+
+/* estilo de parte principal */
+
+.principal {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+aside {
+    flex-basis: 25%;
+    padding: 10px;
+    background-color: #138A84;
+    text-align: center;
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+}
+
+main {
+    flex-basis: 75%;
+    padding: 10px;
+    background-color: #1FDBD2;
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    color: white;
+}
+
+@media (max-width: 800px) {
+    .principal {
+        flex-direction: column;
+    }
+}
+
+.aside a {
+    color: #138A84;
+    padding: 7px 12px;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.imagen2y3 {
+    margin: 40px 0px 0px 0px;
+}
+
+.pa {
+    margin: 0px 0px 25px 0px;
+}
+
+.ta {
+    margin: 10px 0px 20px 0px;
+}
+
+@media (max-width= 800px) {
+    .imagen2y3 {
+        width: 60%;
+        height: auto;
+    }
+
+    .imagen1 {
+        width: 60%;
+        height: auto;
+    }
+
+    .aside {
+        flex-direction: column;
+    }
+}
+
+.main a {
+    color: #1FDBD2;
+    padding: 7px 12px;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.tmain {
+    color: white;
+    margin: 75px 0px 0px 0px;
+    padding: 8px 10px;
+    background-color: #0c4b49;
+    border-radius: 15px;
+}
+
+/* estilos de formulario */
+
+form {
+    font-family: 'Work Sans', sans-serif;
+    padding: 40px;
+    color: white;
+    background-color: #138A84;
+    border: 3px solid black;
+    text-align: center;
+}
+
+label {
+    font-family: 'Work Sans', sans-serif;
+    background-color: white;
+    color: #138A84;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+fieldset {
+    display: grid;
+    grid-template-columns: 20vw 30vw;
+    gap: 10px;
+    width: fit-content;
+}
+
+@media (max-width: 600px) {
+    fieldset {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* estilos quienes somos */
+
+#qstitulo {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    color: #1FDBD2;
+    border-radius: 25px;
+}
+
+#qsp {
+    background-color: white;
+    border-radius: 10px;
+    color: #1FDBD2;
+}
